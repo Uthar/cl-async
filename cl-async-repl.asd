@@ -1,4 +1,4 @@
-(asdf:defsystem cl-async-repl
+(defsystem cl-async-repl
   :author "Andrew Danger Lyon <orthecreedence@gmail.com>"
   :license "MIT"
   :version "0.1"

@@ -1,4 +1,4 @@
-(asdf:defsystem cl-async-test
+(defsystem cl-async-test
   :author "Andrew Danger Lyon <orthecreedence@gmail.com>"
   :license "MIT"
   :version "0.2"
@@ -30,4 +30,5 @@
                  (:file "run")
                  (:file "filesystem")
                  (:file "process")
-                 (:file "fsevent")))))
+                 (:file "fsevent"))))
+  :perform (test-op (o c) (symbol-call :cl-async-test :run-tests)))
